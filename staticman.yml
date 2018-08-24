@@ -7,18 +7,29 @@ comments:
   #
   # Names of the fields the form is allowed to submit. If a field that is
   # not here is part of the request, an error will be thrown.
-  allowedFields: ["name", "email", "body"]
+  allowedFields: ["name", "email", "comment", "postName"]
 
   # When allowedOrigins is defined, only requests sent from one of the domains
   # listed will be accepted.
   allowedOrigins: ["localhost", "jolly-cori-90ec1b.netlify.com"]
-
+  
   # (*) REQUIRED
   #
   # Name of the branch being used. Must match the one sent in the URL of the
   # request.
   branch: "master"
 
+  # (*) REQUIRED
+  #
+  # Destination path (filename) for the data files. Accepts placeholders.
+  filename: "comment-{@date:YYYY-MM-DDTHH-mm-ss.SSS}"
+
+  # The format of the generated data files. Accepted values are "json", "yaml"
+  # or "frontmatter"
+  format: "yaml"
+
+  # Text to use as the commit message or pull request title. Accepts placeholders.
+  commitMessage: "New Staticman comment in {options.slug}"
   # List of fields to be populated automatically by Staticman and included in
   # the data file. Keys are the name of the field. The value can be an object
   # with a `type` property, which configures the generated field, or any value
@@ -26,10 +37,9 @@ comments:
   generatedFields:
     date:
       type: date
-
-  # The format of the generated data files. Accepted values are "json", "yaml"
-  # or "frontmatter"
-  format: "json"
+      options:
+        format: "iso8601"
+    tags: ["comment-subscription"]
 
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
@@ -37,44 +47,65 @@ comments:
   moderation: false
 
   # Name of the site. Used in notification emails.
-  name: "Timothy Crowtz's Blog"
+  name: "Timothy Crowtz: Professional Engineer and Researcher"
+
+  # Notification settings. When enabled, users can choose to receive notifications
+  # via email when someone adds a reply or a new comment. This requires an account
+  # with Mailgun, which you can get for free at http://mailgun.com.
+  notifications:
+    # Enable notifications
+    enabled: false
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun API key: a4502f89-e2bbd11e  
+    # encrypt via https://api.staticman.net/v2/encrypt/a4502f89-e2bbd11e
+    #apiKey:"DLiG3qGu8r7xa287SA9qdMgjrmDYsJR/aH68QGSpJEYxGaIFv+I4xYkfSmaKY0iXDcElV5FA7s9BBSLW9D1jDnWmS88VSAtHqOtw2aPG0E2n34ckVp5F1UVHG8Kp/oxNjbX+tpA6ATuz2Vm6vzmZdhsWpV5xDKW6GfFxQke1Uak="
+    #"a6f493516f56c9ebef624ece735397d0-a4502f89-e2bbd11e"
+    
+
+    # (!) ENCRYPTED
+    #
+    # Mailgun domain: mailgun.crowtz.ca 
+    #encrypt via https://api.staticman.net/v2/encrypt/mailgun.crowtz.ca
+    #domain:"QgqEwkJbFBK8IkUm2c9rBH4PHCpjCAvK/FoxLvBrhlBzS22cmgyUEKPjZ0RtcUhuoXv6EznzOkeh+yudyr43GTFi1leZwqBJSNuKU4Z3h3J68PhENBVza/I+YQvgBkBYPMHABN0X19e6RYGQKZNajdxe2M4yx/sorw1I3uBkI7A="
+    #aBydhvy1LH330VEh5qeAiS0V6evPL73xJXZhXl/vKaHPI/vP6gS5uhQYClRjisE1eNj/9rXQ1UzBHMLUc3kRJOQvyatbzgYmSd/eVjG4D5CFNNbeN96kCk9gb9QmhQ0p0+h73i7aC03ujM1uFpsVochJ484sR4mva+xl1ZPp5yo="
 
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
-  path: "data/comments/{options.entryId}"
+  path: "data/comments/{options.slug}"
 
-  # (*) REQUIRED
-  #
-  # Destination path (filename) for the data files. Accepts placeholders.
-  filename: "{@id}"
-
-  # Names of required files. If any of these isn't in the request or is empty,
+  # Names of required fields. If any of these isn't in the request or is empty,
   # an error will be thrown.
-  requiredFields: ["name", "body"]
+  requiredFields: ["name", "email", "comment"]
 
   # List of transformations to apply to any of the fields supplied. Keys are
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
 
-posts:
-  allowedFields: ["title", "body"]
+blogSubscribers:
+  allowedFields: ["name", "email"]
   allowedOrigins: ["localhost", "jolly-cori-90ec1b.netlify.com"]
   branch: "master"
   generatedFields:
     date:
       type: date
-    slug:
-      type: slugify
       options:
-        field: title
-    tags: ["user-generated"]
-  format: "frontmatter"
+        format: "iso8601"
+    tags: ["blog-subscription"]
+  format: "yaml"
+  commitMessage: "New Staticman blog subsciption"
   moderation: true
-  name: "T. Crowtz Blog"
-  path: "content/post"
-  filename: "{fields.slug}"
-  requiredFields: ["title", "body"]
+  name: "Timothy Crowtz Blog"
+  path: "data/blogSubscribers"
+  filename: "contact-{@date:YYYY-MM-DDTHH-mm-ss.SSS}"
+  requiredFields: ["name", "email"]
   transforms:
-    body: "frontmatterContent"
+    email: md5
+  notifications:
+    enabled: false
+    #apiKey: "DLiG3qGu8r7xa287SA9qdMgjrmDYsJR/aH68QGSpJEYxGaIFv+I4xYkfSmaKY0iXDcElV5FA7s9BBSLW9D1jDnWmS88VSAtHqOtw2aPG0E2n34ckVp5F1UVHG8Kp/oxNjbX+tpA6ATuz2Vm6vzmZdhsWpV5xDKW6GfFxQke1Uak="
+    #domain: "QgqEwkJbFBK8IkUm2c9rBH4PHCpjCAvK/FoxLvBrhlBzS22cmgyUEKPjZ0RtcUhuoXv6EznzOkeh+yudyr43GTFi1leZwqBJSNuKU4Z3h3J68PhENBVza/I+YQvgBkBYPMHABN0X19e6RYGQKZNajdxe2M4yx/sorw1I3uBkI7A="
+
