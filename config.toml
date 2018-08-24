@@ -1,7 +1,8 @@
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
 #baseurl = "https://crowtz.ca/"  
 #baseurl = "http://timothy.crowtz.ca/"  
-baseurl = "https://timothy.crowtz.ca/"
+baseurl = "https://jolly-cori-90ec1b.netlify.com/"
+#baseurl = "https://timothy.crowtz.ca/"
 #baseurl = "http://tim.crowtz.ca/"
 #baseurl = "http://dr.tim.gitlab.io/"  # End your URL with a `/`
 #baseurl = "/"  # End your URL with a `/`
