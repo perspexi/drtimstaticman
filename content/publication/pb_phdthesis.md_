@@ -1,0 +1,68 @@
++++
+title = "Improving the Durability of Nanostructured Thin Film Supported Platinum Fuel Cell Catalysts with the Addition of Iridium and Ruthenium"
+date = "2017-08-31"
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors = ["TC Crowtz"]
+
+# Publication type.
+# Legend:
+# 0 = Uncategorized
+# 1 = Conference proceedings
+# 2 = Journal
+# 3 = Work in progress
+# 4 = Technical report
+# 5 = Book
+# 6 = Book chapter
+publication_types = ["0"]
+
+# Publication name and optional abbreviated version.
+publication = "Ph.D. Thesis, Dalhousie University"
+publication_short = "PhD Thesis"
+
+# Abstract and optional shortened version.
+abstract = "One of the remaining challenges driving polymer electrolyte membrane hydrogen fuel cell research is the durability of the Pt oxygen reduction reaction (ORR) catalyst. Pt is inherently unstable; minute amounts (in the order of ng/cm2 are dissolved every time the fuel cell is started, goes from idle to load, or shut-down. In addition, corrosion of carbon-based materials (ubiquitous inside fuel cells) occurs during the start-up and shut-down and also contributes to the steady decline of fuel cell performance. Adding oxygen evolution reaction (OER) catalysts, of which only Ru and Ir are stable in the acidic conditions of the fuel cell, can decrease Pt loss and carbon corrosion by mitigating the degradation mechanism which occurs during the start-up and shut-down phases. There are two challenges in developing this materials solution (there are other solutions, based on hardware systems) to the fuel cell durability problem: 1) finding the right mixture of Ru and Ir, (Ru is cheaper, more active, but less stable than Ir), and 2) balancing an increase of OER activity with a loss of ORR activity due to Pt coverage by the Ru and Ir. A spread of compositions containing various amounts of Ir or Ru on 85 ug/cm2 of Pt were sputter deposited on a nanostructured thin film state-of-the art catalyst support made by 3M. The nanostructured thin film was grown by 3M on glassy carbon disks designed for a rotating disk electrode, which was used to simulate what happens to a fuel cell cathode during repeated start-up, operation, and shut-down. Experimental difficulties of glassy carbon disk corrosion were overcome with the application of high vacuum silicone grease (silicone oil and fumed silica) to the glassy carbon disk. The silicone grease did not affect the ORR activity. Ir was found to be better at protecting the ORR activity than Ru, and an Ir on Pt sputter deposition scheme was found to be better than a Ir intermixed with Pt scheme. The second study looked for ways to visualize the OER and ORR durability of about 50 of ternary (Ir on Ru on Pt) compositions. Increasing Ir loading improved the durability of both ORR and OER activity. Various Ru loadings  provided little benefit except when combined with 10 ug/cm2 Ir. There was a large amount of scatter in the data. In particular some of the experiments attained a stable ORR activity, something which should not be possible given the nature of electrochemical Pt dissolution. Further work on identifying the source of these problems is needed before another catalyst screening study is done."
+abstract_short = ""
+
+# Featured image thumbnail (optional)
+image_preview = "siringchip.jpg"
+
+# Is this a selected publication? (true/false)
+selected = true
+
+# Projects (optional).
+#   Associate this publication with one or more of your projects.
+#   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
+projects = ["pj_phd-fuelcelldura.md"]
+#projects = []
+
+# Links (optional).
+url_pdf = "http://dalspace.library.dal.ca/handle/10222/73297"
+#url_preprint = "http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf"
+#url_code = "#"
+#url_dataset = "#"
+url_project = "#"
+#url_slides = "#"
+#url_video = "#"
+#url_poster = "#"
+#url_source = "#"
+
+# Custom links (optional).
+#   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
+#url_custom = [{name = "Custom Link", url = "http://example.org"}]
+
+# Does the content use math formatting?
+math = true
+
+# Does the content use source code highlighting?
+highlight = true
+
+# Featured image
+# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
+[header]
+image = "disksputholder.jpg"
+#caption = "My caption :smile:"
+caption = "Catalyst coated disk samples fresh out of the sputtering chamber :smile:"
+
++++
+[//]: # (More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.)

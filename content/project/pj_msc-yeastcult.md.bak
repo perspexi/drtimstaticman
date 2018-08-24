@@ -1,0 +1,36 @@
++++
+# Date this page was created.
+date = "2016-04-27"
+
+# Project title.
+title = "Yeast Cultivation on Softwood Hydrolysate"
+
+## Project summary to display on homepage.
+#summary = "An example of linking directly to an external project website using `external_link`."
+## Optional external URL for project (replaces project detail page).
+#external_link = "http://example.org"
+
+# Project summary to display on homepage.
+summary = "How does one grow enough yeast suitable for a wood-hydrolysate to ethanol fermentation? Yeast strains were isolated in the laboratory and scaled-up cultivation was continued in the production plant via batch and fed-batch processes."
+
+# Optional image to display on homepage (relative to `static/img/` folder).
+image_preview = "yeast_pure.jpg"
+
+# Tags: can be used for filtering projects.
+# Example: `tags = ["machine-learning", "deep-learning"]`
+tags = []
+
+
+# Optional external URL for project (replaces project detail page).
+# external_link = "http://example.org"
+
+# Does the project detail page use math formatting?
+math = false
+
+[header]
+image = "yeast_pure.jpg"
+#image = "rcdm_scheme.jpg"
+caption = "A Bakers Yeast culture which maintained itès purity.  :smile:"
+
++++
+

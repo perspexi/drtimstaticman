@@ -1,0 +1,23 @@
++++
+### Date this page was created.
+date = "2018-01-01"
+### Project title.
+title = "blank project"
+### Project summary to display on homepage.
+summary = "summary2"
+### Optional image to display on homepage (relative to `static/img/` folder).
+image_preview = "kori_bustard.jpg"
+### Tags: can be used for filtering projects.
+# Example: `tags = ["tag1", "tag2"]`
+tags = ["tag1"]
+# Optional external URL for project (replaces project detail page).
+external_link = ""
+# Does the project detail page use math formatting?
+math = false
+# Optional featured image (relative to `static/img/` folder).
+[header]
+image = "headers/beachshell.jpg"
+caption = "My caption :smile:"
++++
+
+Lorem ipsum dolor sit amet

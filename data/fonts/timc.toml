@@ -1,0 +1,39 @@
+# Font style metadata
+name = "timc"
+
+
+
+
+#
+# Optional Google font URL
+google_fonts = "Spectral:500,700|Alegreya+Sans:400,400italic,700|Roboto:400,400italic,700|Roboto+Mono"
+
+# Font families
+#heading_font = "Spectral"
+heading_font = "Alegreya Sans"
+#body_font = "Alegreya Sans"
+body_font = "Spectral"
+nav_font = "Roboto"
+#nav_font = "Spectral"
+mono_font = "Roboto Mono"
+
+# Font size
+font_size = "20"
+font_size_small = "16"
+
+
+
+
+
+
+
+# Font families
+#heading_font = "Montserrat"
+#Georgia Bitter
+#body_font = "SeoulHangangEB"
+#nav_font = "FranklinITCProLight"
+#mono_font = "Roboto Mono"
+
+# Font size
+#font_size = "24"
+#font_size_small = "18"

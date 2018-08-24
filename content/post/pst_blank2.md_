@@ -1,0 +1,52 @@
++++
+title = "title2"
+date = 2016-04-20
+lastmod = 2018-01-13
+draft = false
+tags = ["tag1"]
+summary = "summary2"
+[header]
+image = "headers/beachshell.jpg"
+caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
++++
+
+You can do **bold**. You can do *italics*.
+[Make a link to google](https://www.google.com) and fill in the rest of the sentence.
+
+[![caption](https://www.bing.com/az/hprichbg/rb/SaltMountains_EN-US13132607165_1366x768.jpg)](https://bingwallpaper.com/20180208.html)
+
+A bulleted list:
+- one thing
+- another thing
+
+## Another heading
+
+Another list:
+
+* item one
+* item two
+
+### lower grade heading
+
+1. Numbered list item one
+    * Sub-bullet
+2. Numbered list item two
+
+### Another heading
+
+1. Write this code: 
+
+        git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
+    
+    *Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace `sourcethemes` with your GitHub username.*
+
+2. Write more code:
+
+        cd My_Website
+        git submodule update --init --recursive
+
+## License
+
+Copyright 2016-present [George Cushen](https://georgecushen.com).
+
+Released under the [MIT](https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md) license.

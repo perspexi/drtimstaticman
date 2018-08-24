@@ -1,0 +1,55 @@
+# parula yellow to violet
+# https://www.mathworks.com/matlabcentral/fileexchange/35242-matlab-plot-gallery-colormap-chart?focused=6792976&tab=example
+#F8FA0E
+#F6DD22
+#FEC634
+#ECB94C
+#CABB5C
+#A5BE6B
+#7ABF7C
+#49BC94
+#20B4AD
+#07A9C0
+#079CCF
+#1388D3
+#0F77DB
+#0265E1
+#3145BC
+#352A87
+
+
+
+
+
+
+# Theme metadata
+name = "timc"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+#primary = "#4caf50"
+#primary_light = "#80e27e"
+#primary_dark = "#087f23"
+primary = "#0265E1"
+primary_light = "#352A87"
+primary_dark = "#352A87"
+
+# Menu
+#menu_primary = "#1FA187"
+#menu_text = "#fff"
+#menu_text_active = "#fde724"
+#menu_title = "#440154"
+menu_primary = "#49BC94"
+menu_text = "#1388D3"
+menu_text_active = "#F8FA0E"
+menu_title = "#0265E1"
+
+# Home sections
+#home_section_odd = "rgb(255, 255, 255)"
+#home_section_even = "rgb(247, 247, 247)"
+# #F9F9C5 lightyellow #FFFFEF
+home_section_odd = "#F5F7F9"
+# #BEC3E2
+home_section_even = "#F4FBFF"

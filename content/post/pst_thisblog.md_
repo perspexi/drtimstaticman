@@ -1,0 +1,14 @@
++++
+title = "This Blog"
+date = 2016-04-20
+lastmod = 2018-01-13
+draft = true
+#tags = ["code","lifestack"]
+summary = "The setup for this blog. Caveats for GoHugo, and it's Academic theme"
+[header]
+image = "headers/getting-started.png"
+caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic/)"
++++
+
+You can do **bold**. You can do *italics*.f
+[Make a link to google](https://www.google.com) and fill in the rest of the sentance.

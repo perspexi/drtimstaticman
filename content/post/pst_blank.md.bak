@@ -1,0 +1,199 @@
++++
+title = "Markdown examples -- no mmark"
+date = 2016-04-20
+lastmod = 2018-01-13
+draft = true
+math = true
+# markup = "mmark"
+tags = ["tag1"]
+summary = "Markdown examples -- no mmark"
+[header]
+image = "headers/beachshell.jpg"
+caption = "Image: [**Shell on the beach**](https://depositphotos.com/7100045/stock-photo-shell-on-the-beach.html)"
+#create a gallery
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png"
+caption = "Default"
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png"
+caption = "Ocean"
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png"
+caption = "Dark"
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png"
+caption = "Default"
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png"
+caption = "Coffee theme with Playfair font"
+[[gallery_item]]
+album = "1"
+image = "https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png"
+caption = "1950s"
++++
+no mmark
+# Heading 1/6
+## Heading 2/6
+### Heading 3/6
+#### Heading 4/6
+##### Heading 5/6
+###### Heading 6/6
+---
+Formatting:
+ *italic* _italic_ **bold** __bold__ 
+ ***bold_italics*** _**bold_italics**_ ___bold_italics___
+ sub~script~ super^script^ ~~strikethrough~~ 
+Dashes -- and --- 
+Three consecutive dots ... into an ellipsis  
+Fractions (may not work on some platforms) 1/2 1/3 3/4  
+There's no "proper" way to indent. You have to  
+$\quad$ hack it. More ways are listed on [this stackoverflow post](https://stackoverflow.com/questions/6046263/how-to-indent-a-few-lines-in-markdown-markup)
+
+> a block quote
+
+    different code-like block quote 
+
+---
+Symbols
+Symbols (c), (tm), and (r)  
+HTML symbols can come in handy: &sect; &yen; &cent; &pound; &euro; &curren;  
+Some (like the Dutch Florin symbol: &fnof;) may work in older browsers.  
+Unicode symbols work too.
+¥,£,€,¤,ƒ  
+HTML white space: non-breaking_space:(&nbsp;) tab:(&Tab;)  
+newline(&NewLine;) does not redder a newline. 
+Many more HTML symbols referenced at:
+More referenced at [Symbol Codes | Entity Codes for HTML](http://sites.psu.edu/symbolcodes/codehtml/)  
+I'm not sure if all are supported by hugo's non-mmark markdown.  
+Many of these are not supported by hugo. Maybe they can be enabled but I dont know.
+
+---
+Links and Images:
+Here is a [link](https://www.google.com) to google.
+
+---
+Latex works when "math = true" is added to gohugo page meta data. I think it's rendered by by [MathJax](https://www.mathjax.org/) ([quickref](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)). Some markdown implementaitons use [KaTeX](https://khan.github.io/KaTeX/).  
+Inline $y=\text{m}x +\rm{b}$  
+centered:
+$$ y=\text{m}x +\rm{b} $$  
+
+
+
+---
+Lists:
+
+1. First ordered list item
+2. Another item
+You can have properly indented paragraphs within list items. 
+3. Third item
+
+---
+Emojis:
+:+1: :sparkles: :camel: :tada: :rocket:  
+Some don't work: :metal: :octocat:  
+[emoji codes](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
+---
+Code:
+Inline `code` .
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+---
+Tables (colons align columns):
+
+Markdown | Less | Pretty
+---|:---:|---:
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+---
+Youtube:
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/KmtzQCSh6xk/0.jpg)](http://www.youtube.com/watch?v=KmtzQCSh6xk)
+
+GoHugo shortcode can be used to embed a youtube video. See shortcode examples. 
+
+---
+Comments:
+[//]: # ( a comment )
+Another comment:
+<!-- this is a comment
+with empty lines
+-->  
+More comments hacks are listed on [Stack Overflow](https://stackoverflow.com/questions/4823468/comments-in-markdown).
+
+---
+Caveats:  
+space between the latex block and the next line will be less if there is an empty line after LaTeX block
+$$
+y=\text{m}x +\rm{b}
+$$  
+
+with empty line kj jf oie uif ushfs uhluahf uerhf jsrhfuihf khdf jdh
+$$
+y=\text{m}x +\rm{b}
+$$  
+no empty line
+
+---
+
+Horizontal lines:
+
+---
+
+
+
+Markdown code synonyms:
+Math:
+\\[ k \\]
+$$k$$
+math in \[ \quad k \] $ \quad k $ line.
+Horiz Rule: - or _ or = or + x3  
+Bold italics: * or 
+
+---
+An empty line before a Latex block will add a barely noticeable bit of extra space than no empty line. 
+empty line before kjhfoajh fojsf oijs ofijsiof jio
+
+$$
+y=\text{m}x +\rm{b}
+$$  
+
+no empty line kjhfoajh fojsf oijs ofijsiof jio.
+$$
+y=\text{m}x +\rm{b}
+$$  
+
+---
+
+An Image:
+
+[![caption](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
+
+Below is the gallery.
+
+{{< gallery >}}
+
+
+1. Write this code: 
+
+        git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
+    
+    *Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace `sourcethemes` with your GitHub username.*
+
+2. Write more code:
+
+        cd My_Website
+        git submodule update --init --recursive
+

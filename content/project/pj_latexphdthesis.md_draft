@@ -1,0 +1,32 @@
++++
+client_name = ""
+image = ""
+math = false
+external_link = ""
+date = "2017-01-14T15:20:22-04:00"
+title = "Latex for my PhD thesis"
+tags = [
+]
+summary = "Some things I've learned about Latex while writing my PhD thesis"
+
++++
+I've chosen to write my PhD Thesis in Latex. Here are some useful things I've learned.
+
+## My setup
+windows based, portable (able to run from public computers. 
+
+## Tips and Tricks
+
+### Footnotes in Figure Captions:
+This is dicussed in detail on  [StackExchange](http://tex.stackexchange.com/questions/10181/using-footnote-in-a-figures-caption#67030)
+I've used Herbert's answer, and defined the caption with a \def. This makes sure the footnote is not in the LoF.
+
+However, this dosen't work if the Figure is at the end of a chapter or end section of text which is \FloatBarrier'ed. inserting a \newpage before the figure works (i.e. keeps the footnote and figure on the same page) but the Figure is placed at the top. 
+
+## Some useful pages:
+* [LaTeX General Help](http://www.personal.ceu.hu/tex/latex.htm)
+ * [LaTeX Line and Page Breaking](http://www.personal.ceu.hu/tex/breaking.htm)
+* [LaTeX Style and BiBTeX Bibliography Formats for Biologists:
+TeX and LaTeX Resources](https://schneider.ncifcrf.gov/latex.html) (This might be useful when I try to fix my bibliography to better reference DOE reports and presentations.) 
+
+
